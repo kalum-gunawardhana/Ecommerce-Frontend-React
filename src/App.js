@@ -3,9 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ProductList />} />
+        <Route path="/add" element={<ProductForm />} />
+        <Route path="/edit/:id" element={<ProductForm />} />
+        <Route path="/view/:id" element={<ProductDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

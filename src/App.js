@@ -1,5 +1,10 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import ProductList from './components/ProductList';
+import ProductForm from './components/ProductForm';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   return (
